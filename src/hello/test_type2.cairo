@@ -1,6 +1,6 @@
 #[contract]
 mod HelloStarknet {
-    #[derive(Copy, Drop, Serde)]
+    #[derive(Copy,Drop)]
     struct Back {
         pa1: felt252,
         pa2: u8,
