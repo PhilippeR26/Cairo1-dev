@@ -1,5 +1,5 @@
 #[contract]
-mod HelloStarknet {
+mod struct4 {
     use array::ArrayTrait;
 
     //simple struct

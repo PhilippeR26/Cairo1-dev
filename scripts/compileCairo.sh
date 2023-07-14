@@ -1,2 +1,2 @@
 cd cairo
-cargo run --bin starknet-compile -- ../src/merkle/merkle_verify_c1.cairo ../out/merkle/merkle_starknet.sierra
+cargo run --bin starknet-compile -- --allowed-libfuncs-list-file ../scripts/lib_funcs.json ../src/hello/hello.cairo ../out/hello/hello.sierra.json

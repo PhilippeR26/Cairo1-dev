@@ -93,7 +93,7 @@ mod merkle {
         let h1: felt252 = get_hash(h0, amount);
         let hashed_leaf: felt252 = get_hash(h1, 2); // 2= length of data (address & amount)
         let is_valid_request: bool = verify_proof(hashed_leaf, proof);
-        assert(is_valid_request == true, 'Proof not valid.'); // revert if not valid
+        assert(is_valid_request  , 'Proof not valid.'); // revert if not valid
         // Airdop
         // Do not forget to first store this address in a storage of addresses already airdropped,
         // to be sure to perform the airdrop only once per address.

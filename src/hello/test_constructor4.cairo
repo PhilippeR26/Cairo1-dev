@@ -1,9 +1,9 @@
 #[contract]
-mod HelloStarknet {
+mod TestConstructor4 {
+    use starknet::ContractAddress;
     use array::ArrayTrait;
 
-    //simple struct
-    #[derive(Copy, Drop, Serde)]
+     #[derive(Copy, Drop, Serde)]
     struct Order {
         p1: felt252,
         p2: felt252,
@@ -22,11 +22,6 @@ mod HelloStarknet {
                 }
             )
         }
-    }
-
-    #[view]
-    fn create_order_template() -> Order {
-        Order { p1: 12, p2: 23,  }
     }
 
     #[derive(Drop, Serde)]
@@ -50,34 +45,45 @@ mod HelloStarknet {
         }
     }
 
-    #[view]
-    fn get_order() -> Order {
-        Order { p1: 34_felt252, p2: 45_felt252 }
-    }
-
-    #[view]
-    fn get_order2() -> Order2 {
-        let mut a: Array<felt252> = ArrayTrait::new();
-        a.append(17_felt252);
-        a.append(18_felt252);
-        a.append(19_felt252);
-        Order2 { p1: 34_felt252, p2: a }
-    }
-
-    #[view]
-    fn get_order3(obj: Order) -> felt252 {
-        obj.p1
-    }
-
-    #[view]
-    fn get_order4(obj: Order2) -> felt252 {
-        obj.p1
-    }
+// #[derive(Drop, Serde)]
+//     struct Order3 {
+//         p11: Order,
+//         p12: Order2,
+//     }
 
 
-    #[view]
-    fn render_tuple() -> (u8, u256, u128) {
-        let b = u256 { low: 1_u128, high: 17_u128 };
-        (1_u8, b, 3456_u128)
+    struct Storage {
+        balance: felt252, 
     }
+
+    ////////////////////////////////
+    // Constructor
+    ////////////////////////////////
+    #[constructor]
+    fn constructor(
+        name: felt252,
+        symbol: felt252,
+        decimals: u8,
+        initial_supply: u256,
+        card: Order2,
+        recipient: ContractAddress,
+        active:bool,
+        coord:(felt252,u16),
+        mut longText: Array<felt252>,
+        mut array1:Array<u128>,
+        mut array2:Array<Array<u16>>,
+        mut array3:Array<Order2>,
+        mut array4:Array<u256>,
+        tuple1:(u8,u16,u32,u64),
+        mut array5:Array<(u8,u16)>,
+    ) {
+        
+    }
+
+
+    #[view]
+    fn test1(p1: felt252) -> felt252 {
+        p1 + 1_felt252
+    }
+
 }
