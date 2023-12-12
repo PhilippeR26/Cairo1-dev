@@ -413,12 +413,12 @@
   "entry_points_by_type": {
     "EXTERNAL": [
       {
-        "selector": "0x11e8e8caedade09c333b865af974b57a88a87e673cee2ab5920dba841924fc1",
-        "function_idx": 1
+        "selector": "0x96b9e9fe5d74c2007f837942b56b3a984ea0490884e056f48ca4f3f93c769",
+        "function_idx": 0
       },
       {
-        "selector": "0x2c2c5a8bc1087f63772728099e970bfdfcac1558a10b9518575460292850835",
-        "function_idx": 0
+        "selector": "0x11e8e8caedade09c333b865af974b57a88a87e673cee2ab5920dba841924fc1",
+        "function_idx": 1
       }
     ],
     "L1_HANDLER": [],
@@ -436,7 +436,7 @@
       "items": [
         {
           "type": "function",
-          "name": "test_felt",
+          "name": "test_felt1",
           "inputs": [
             {
               "name": "p1",
