@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"cd1fq23gfu2vm","package_name":"testl1l2","contract_name":"checkMessageGift","module_path":"testl1l2::checkMessageGift","artifacts":{"sierra":"testl1l2_checkMessageGift.contract_class.json","casm":"testl1l2_checkMessageGift.compiled_contract_class.json"}}]}
