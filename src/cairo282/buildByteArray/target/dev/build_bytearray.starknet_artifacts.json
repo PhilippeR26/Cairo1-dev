@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"fjq3gm4efpu40","package_name":"build_bytearray","contract_name":"test_bytearray","module_path":"build_bytearray::test_bytearray","artifacts":{"sierra":"build_bytearray_test_bytearray.contract_class.json","casm":"build_bytearray_test_bytearray.compiled_contract_class.json"}}]}
