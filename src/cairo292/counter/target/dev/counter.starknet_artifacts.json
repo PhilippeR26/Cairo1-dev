@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"dhftrd89eq136","package_name":"counter","contract_name":"test_counter","module_path":"counter::test_counter","artifacts":{"sierra":"counter_test_counter.contract_class.json","casm":"counter_test_counter.compiled_contract_class.json"}}]}

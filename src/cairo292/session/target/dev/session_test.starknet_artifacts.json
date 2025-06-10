@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"e7o5uabdgobkk","package_name":"session_test","contract_name":"test_session","module_path":"session_test::test_session","artifacts":{"sierra":"session_test_test_session.contract_class.json","casm":"session_test_test_session.compiled_contract_class.json"}}]}

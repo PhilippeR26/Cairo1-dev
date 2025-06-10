@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"ld4k41o3sca04","package_name":"erc20_oz100","contract_name":"MyToken","module_path":"erc20_oz100::erc20::MyToken","artifacts":{"sierra":"erc20_oz100_MyToken.contract_class.json","casm":"erc20_oz100_MyToken.compiled_contract_class.json"}}]}

@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"vkf6c1lavqpvg","package_name":"minimalist","contract_name":"NameStarknet","module_path":"minimalist::NameStarknet","artifacts":{"sierra":"minimalist_NameStarknet.contract_class.json","casm":"minimalist_NameStarknet.compiled_contract_class.json"}}]}
