@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"jbpin3buqjsou","package_name":"long_string","contract_name":"ArrayToByteArray","module_path":"long_string::ArrayToByteArray","artifacts":{"sierra":"long_string_ArrayToByteArray.contract_class.json","casm":"long_string_ArrayToByteArray.compiled_contract_class.json"}}]}

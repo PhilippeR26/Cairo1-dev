@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"g0rqujjcgcpo0","package_name":"snip12_bytearray","contract_name":"test_bytearray","module_path":"snip12_bytearray::test_bytearray","artifacts":{"sierra":"snip12_bytearray_test_bytearray.contract_class.json","casm":"snip12_bytearray_test_bytearray.compiled_contract_class.json"}}]}

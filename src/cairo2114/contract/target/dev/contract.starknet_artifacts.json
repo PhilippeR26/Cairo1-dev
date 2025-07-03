@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"3hrgh7cda9o3c","package_name":"contract","contract_name":"NameStarknet","module_path":"contract::NameStarknet","artifacts":{"sierra":"contract_NameStarknet.contract_class.json","casm":"contract_NameStarknet.compiled_contract_class.json"}}]}

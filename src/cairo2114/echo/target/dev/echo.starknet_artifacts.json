@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"lonfp1o7cqieg","package_name":"echo","contract_name":"Echo","module_path":"echo::Echo","artifacts":{"sierra":"echo_Echo.contract_class.json","casm":"echo_Echo.compiled_contract_class.json"}}]}
