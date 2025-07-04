@@ -1,7 +1,6 @@
 // Cairo 2.11.4
 // convert an array of short strings to a ByteArray
 
-
 #[starknet::interface]
 pub trait IArrayToByteArray<TContractState> {
     /// Converts an array of felt252 (short strings) into a single ByteArray.
@@ -12,7 +11,6 @@ pub trait IArrayToByteArray<TContractState> {
 
 #[starknet::contract]
 pub mod ArrayToByteArray {
-
     #[storage]
     struct Storage {}
 
@@ -42,7 +40,7 @@ pub mod ArrayToByteArray {
                     temp_felt = (temp_u256 / 256).try_into().unwrap();
                     len += 1;
                 }
-                byte_array.append_word(short_str, len);
+                byte_array.append_word(short_str, len - 1);
                 pos += 1;
             }
             byte_array

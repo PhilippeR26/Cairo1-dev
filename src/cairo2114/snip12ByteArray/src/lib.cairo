@@ -79,15 +79,15 @@ mod test_bytearray {
 
             let result = Serde::<felt252>::deserialize(ref res).unwrap();
             if result == starknet::VALIDATED {
-                let _text: ByteArray = self.to_byte_array(message);
-                self.irl.write("Win");
+                let text: ByteArray = self.to_byte_array(message);
+                self.irl.write(text);
             } else {
                 self.irl.write("Fail");
             }
         }
 
         fn to_byte_array(self: @ContractState,inp: LongString) -> ByteArray {
-            let mut inp2: Array<felt252> = inp.to_store;
+            let inp2: Array<felt252> = inp.to_store;
            convert_felt252_array_to_bytearray(inp2)
         }
     }

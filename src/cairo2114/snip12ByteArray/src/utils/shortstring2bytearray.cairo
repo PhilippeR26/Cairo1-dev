@@ -22,7 +22,7 @@ pub fn convert_felt252_array_to_bytearray(felt_array: Array<felt252>) -> ByteArr
             temp_felt = (temp_u256 / 256).try_into().unwrap();
             len += 1;
         }
-        byte_array.append_word(short_str, len);
+        byte_array.append_word(short_str, len - 1);
         pos += 1;
     }
     byte_array
