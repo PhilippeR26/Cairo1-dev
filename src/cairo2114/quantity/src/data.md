@@ -1,0 +1,5 @@
+# class hash :
+0x01c8eea1adb73897efebabf3e2c5c3fb8fa02ec4794c26f4f573bede014f986b
+
+# Testnet address :
+0x494cff97f36b18123a7d9749756c8c06eecaf3b8b916be1b511e717d3900528
