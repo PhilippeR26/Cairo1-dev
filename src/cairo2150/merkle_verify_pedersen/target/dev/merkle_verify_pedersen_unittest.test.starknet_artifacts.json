@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"16vcim5do5290","package_name":"merkle_verify_pedersen","contract_name":"Merkle","module_path":"merkle_verify_pedersen::Merkle","artifacts":{"sierra":"merkle_verify_pedersen_unittest_Merkle.test.contract_class.json","casm":null}}]}

@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"2hoa2qds44d7u","package_name":"enums","contract_name":"test_enums","module_path":"enums::test_enums","artifacts":{"sierra":"enums_test_enums.contract_class.json","casm":"enums_test_enums.compiled_contract_class.json"}}]}

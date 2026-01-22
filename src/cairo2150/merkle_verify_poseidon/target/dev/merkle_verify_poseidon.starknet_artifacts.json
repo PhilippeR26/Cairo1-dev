@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"fg1f2acteqiom","package_name":"merkle_verify_poseidon","contract_name":"Merkle","module_path":"merkle_verify_poseidon::Merkle","artifacts":{"sierra":"merkle_verify_poseidon_Merkle.contract_class.json","casm":"merkle_verify_poseidon_Merkle.compiled_contract_class.json"}}]}

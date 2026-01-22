@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"cv6vb1sgvg6m0","package_name":"test_events","contract_name":"send_events","module_path":"test_events::send_events","artifacts":{"sierra":"test_events_send_events.contract_class.json","casm":"test_events_send_events.compiled_contract_class.json"}}]}

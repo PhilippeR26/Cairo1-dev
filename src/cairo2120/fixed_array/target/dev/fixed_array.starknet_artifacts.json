@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"6v48apeg5jkvc","package_name":"fixed_array","contract_name":"testfixed_array","module_path":"fixed_array::testfixed_array","artifacts":{"sierra":"fixed_array_testfixed_array.contract_class.json","casm":"fixed_array_testfixed_array.compiled_contract_class.json"}}]}
