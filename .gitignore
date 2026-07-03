@@ -1,9 +1,13 @@
 
 /cairo
 /node_modules
+/target
+
+
 src/cairo240/merkle_verify_pedersen.cairo
 src/cairo240/merkle_verify_poseidon_old.cairo
 src/cairo240/merkle_verify_poseidon.cairo
 
 src/cairo210/openzeppelin070
 src/cairo210/account_abstraction
+

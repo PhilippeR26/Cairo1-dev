@@ -13,21 +13,21 @@ mod test_counter {
 
     #[storage]
     struct Storage {
-        counter: u128,
+        counter0: u128,
     }
 
     #[constructor]
     fn constructor(ref self: ContractState, init: u128) {
-        self.counter.write(init);
+        self.counter0.write(init);
     }
 
     #[abi(embed_v0)]
     impl TestCounter of super::ICounter<ContractState> {
         fn increase(ref self: ContractState, x: u128) {
-            self.counter.write((self.counter.read() + x))
+            self.counter0.write(self.counter0.read() + x)
         }
         fn getCounter(self: @ContractState) -> u128 {
-            self.counter.read()
+            self.counter0.read()
         }
     }
 }
