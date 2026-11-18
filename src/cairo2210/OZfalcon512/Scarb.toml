@@ -1,0 +1,32 @@
+[package]
+name = "oz_falcon512"
+version = "0.1.0"
+edition = "2024_07"
+
+# The two OpenZeppelin Falcon-512 account presets are compiled unmodified from the
+# v4.1.0-rc.0 tag (not published on scarbs.xyz). Build with `scarb --release build`:
+# OZ states that dev-profile Falcon Sierra cannot be lowered to CASM.
+[dependencies]
+starknet = "2.21.0"
+openzeppelin_presets = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v4.1.0-rc.0" }
+
+[dev-dependencies]
+assert_macros = "2.21.0"
+snforge_std = "0.64.1"
+openzeppelin_interfaces = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v4.1.0-rc.0" }
+
+# No allowed-libfuncs-list key: Scarb's default list. Cairo 2.21 no longer has the
+# "experimental" list that OZ's own manifests request.
+[[target.starknet-contract]]
+sierra = true
+casm = true
+build-external-contracts = [
+    "openzeppelin_presets::falcon_512_shake_account::Falcon512ShakeAccountUpgradeable",
+    "openzeppelin_presets::falcon_512_shake_direct_account::Falcon512ShakeDirectAccountUpgradeable",
+]
+
+[scripts]
+test = "snforge test --release --max-n-steps 5000000"
+
+[tool.scarb]
+allow-prebuilt-plugins = ["snforge_std"]
